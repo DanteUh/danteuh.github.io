@@ -1,0 +1,185 @@
+/*Global All Pages*/
+html{
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font: 16px/1.5 "Josefin Sans", "Raleway", "open sans", san-serif;
+    background-color: floralwhite;
+}
+/*För alla containers*/
+.container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*För alla p taggar & huvud content text*/
+.text {
+    font-size: 1.5em
+}
+
+/*Navbar*/
+/*Används på alla navbars*/
+.navbar {
+    height: 7%;
+    letter-spacing: 0.02rem;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+}
+/*Bara navbaren på "Home" sidan*/
+.header .navbar {
+    height: 14%;
+}
+/*Navbarens container på alla sidor*/
+.navbar .container {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Specifikt för loggan i navbaren*/
+.navbox-logo {
+	margin-left: rem;
+}
+/*Specifikt för för textlänkarna i navbaren*/
+.navbox-link {
+	margin-right: rem;
+}
+/*Alla länkarna i navbaren*/
+.navbar .container .nav-link {
+    text-decoration: none;
+    color: #fff;
+	margin: 1rem;
+}
+
+.navbar .container .nav-link:hover {
+    color: #3ECE31;
+}
+/*Loggan i navbar*/
+.navbar .container .logo {
+    height: 3rem;
+}
+
+/*Main*/
+/*Main finns på alla main element*/
+.main {
+    color: black;
+    width: 100%;
+    height: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Finns på alla sections i main*/
+.main .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*Home*/
+/*Header finns bara i "Home"*/
+.header {
+    background: url(pictures/plants-background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    height: 50%;
+    width: 100%;
+}
+/*För alla h1 och h2*/
+.main-heading, .sub-heading {
+    font: "Raleway";
+    color: black;
+}
+/*För alla h1 main headings*/
+.main-heading {
+    font-size: 3.375em;
+    letter-spacing: 0.15rem;
+}
+/*Specifikt för den stora headingen i header*/
+.header .main-heading {
+    font-size: 5.063em;
+}
+/*För alla h2 subheadings samt table headings (th)*/
+.sub-heading {
+    font-size: 2.25em;
+}
+/*Main på home sidan*/
+.main-home {
+    height: 50%;
+}
+
+
+/*Pricing*/
+/*Specifikt för table heading för price-table*/
+.main-pricing .container .price-table th {
+    font-size: 2.25em;
+    border: 1px solid #757575;
+    border-radius: 0.1em;
+    padding: 0.5rem;
+}
+/*Specifikt för 2:a kolumnen i pricing-table*/
+.main-pricing .container .price-table thead th:nth-child(2), .main-pricing .container .price-table tr td:nth-child(2){
+    border-color: #197524;
+    color: #197524;
+}
+/*Specifikt för 3:e kolumnen i pricing-table*/
+.main-pricing .container .price-table thead th:nth-child(3), .main-pricing .container .price-table tr td:nth-child(3){
+    border-color: #82169E;
+    color: #82169E;
+}
+
+/*Specifikt för td i pricing-table*/
+.main-pricing .container .price-table td {
+    font-size: 1.5em;
+    border: 1px solid #757575;
+    border-radius: 0.1em;
+    padding: 0.5rem;
+}
+/*Specifikt för x-ikonen i pricing tabellen*/
+.x-icon {
+    width: 3rem;
+}
+
+
+/*Themes*/
+/*Specifikt för temabilderna*/
+.main-themes .container .theme-table .theme-pic {
+    height: 16rem;
+}
+
+
+/*About*/
+/*Specifikt för about images*/
+.main-about .container .about-img {
+    height: 15rem;
+    margin: 0 2rem 2rem;
+}
+
+
+/*Contact*/
+/*Specifik för formuläret i contact*/
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+/*Specifikt för email area*/
+.contact-form .email-area {
+    width: 20rem;
+    height: 10rem;
+    margin: 0 0 5% 0;
+}
